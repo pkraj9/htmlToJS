@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="CEO List Loop" icon-name="custom:custom14">
+
+        <template for:each={CEOList} for:item="mc">
+            <li key={mc.id}>
+                Ranking : {mc.id} | CEO Name : {mc.name}, {mc.title}
+                <br>
+
+            </li>
+
+        </template>
+
+        <lightning-button variant="brand" label="show list" onclick={showlistHandler}></lightning-button>
+    </lightning-card>
+</template>

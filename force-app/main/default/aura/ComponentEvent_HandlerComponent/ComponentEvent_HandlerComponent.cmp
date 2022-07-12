@@ -1,0 +1,12 @@
+<aura:component >
+    <aura:attribute name="messageFromEvent" type="String"/>
+    <aura:attribute name="numOfEventsCalled" type="Integer" default="0"/>
+    
+    <aura:handler name="cmpEventName" event="c:TrainingComponentEvent_Event"
+                  action="{!c.handleComponentEvent}"/>
+    
+    <c:ComponentEvent_NotifierComponent />
+    
+    <p>{!v.messageFromEvent}</p>
+    <p>Number of events: {!v.numOfEventsCalled}</p>
+</aura:component>

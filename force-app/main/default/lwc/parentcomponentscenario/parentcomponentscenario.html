@@ -1,0 +1,20 @@
+<template>
+        <lightning-card title="Parent to child transfer (parent component)" icon-name="custom:custom25">
+
+            <div>   
+                this statement is written in parent component's HTML File.
+                <br>
+                Project Name = Intelogik's Project.
+                <br>
+                (Project code we will pass and print in child component)
+
+                <br><br>
+
+                <c-childcomponentscenario
+                messagefromparent="This message is passed from parent to child comp"
+                projectcode="Intelogik123">
+                </c-childcomponentscenario>
+            </div>
+
+        </lightning-card>
+</template>
